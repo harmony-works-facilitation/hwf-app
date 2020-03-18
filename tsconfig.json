@@ -2,6 +2,13 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@hwfSite/*": ["./src/app/site/*"],
+      "@hwfSiteComponents/*": ["./src/app/site/components/*"],
+      "@hwfKentico/*": ["./src/app/kentico/*"],
+      "@hwfKenticoResolvers/*": ["./src/app/kentico/resolvers/*"],
+      "@hwfShared/*": ["./src/app/shared/*"],
+    },
     "outDir": "./dist/out-tsc",
     "noImplicitAny": true,
     "noImplicitReturns": true,
