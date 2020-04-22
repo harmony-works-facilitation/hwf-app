@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/',
+    redirectTo: 'site/home',
     pathMatch: 'full',
   },
   {
@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '',
+    redirectTo: 'site/home',
   },
 ];
 
@@ -21,7 +21,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, {
       enableTracing: false,
-      useHash: true,
+      useHash: false,
     }),
   ],
   exports: [RouterModule],
