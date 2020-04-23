@@ -1,1 +1,11 @@
-<p>community-connections works!</p>
+<div class="jumbotron jumbotron-fluid d-none d-xs-none d-sm-none d-md-block d-lg-block">
+
+  <div class="jumbotron-background">
+    <img [src]="bannerImageUrl"/>
+  </div>
+
+  <div class="container text-white">
+    <h1 class="display-4">{{ pageName }}</h1>
+    <p *ngIf="bannerSlogan" class="lead">{{ bannerSlogan }}</p>
+  </div>
+</div>

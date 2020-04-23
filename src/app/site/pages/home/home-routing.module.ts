@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home.component';
+import { HomeResolver } from '@hwfKentico/resolvers/home.resolver';
 
 @NgModule({
   imports: [
@@ -9,6 +10,9 @@ import { HomeComponent } from './home.component';
       {
         path: '',
         component: HomeComponent,
+        resolve: {
+          content: HomeResolver
+        }
       },
     ])
   ],

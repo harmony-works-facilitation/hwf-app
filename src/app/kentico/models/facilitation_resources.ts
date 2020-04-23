@@ -6,5 +6,20 @@ import { ContentItem, Elements } from '@kentico/kontent-delivery';
  * Tip: You can replace 'ContentItem' with another generated class to fully leverage strong typing.
  */
 export class FacilitationResources extends ContentItem {
-    
+    public banner: Elements.AssetsElement;
+    public pageName: Elements.TextElement;
+    public bannerSlogan: Elements.TextElement;
+    constructor() {
+        super({
+            propertyResolver: ((elementName: string) => {
+                if (elementName === 'page_name') {
+                    return 'pageName';
+                }
+                if (elementName === 'banner_slogan') {
+                    return 'bannerSlogan';
+                }
+                return elementName;
+            })
+        });
+    }
 }

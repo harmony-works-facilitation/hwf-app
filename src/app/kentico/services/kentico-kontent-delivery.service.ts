@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { ContentItem, Elements, TypeResolver, DeliveryClient, ItemResponses, TypeResponses } from '@kentico/kontent-delivery';
+import { TypeResolver, DeliveryClient, ItemResponses, TypeResponses } from '@kentico/kontent-delivery';
 import { Home } from '../models/home';
 import { Observable } from 'rxjs';
 import { AboutUs } from '../models/about_us';
@@ -18,7 +18,14 @@ export class KenticoKontentDeliveryService {
   constructor() {
     this.deliveryClient = new DeliveryClient({
       projectId: environment.kenticoKontentProjectId,
-      typeResolvers: [], // To be extended when models become available
+      typeResolvers: [
+        new TypeResolver('home', (rawData) => new Home),
+        new TypeResolver('about_us', (rawData) => new AboutUs),
+        new TypeResolver('community_connections', (rawData) => new CommunityConnections),
+        new TypeResolver('facilitation_resources', (rawData) => new FacilitationResources),
+        new TypeResolver('gallery', (rawData) => new Gallery),
+        new TypeResolver('updates', (rawData) => new Updates),
+      ], // To be extended when models become available
     });
   }
 

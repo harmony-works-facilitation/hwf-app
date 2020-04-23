@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { AboutUsComponent } from './about-us.component';
+import { AboutUsResolver } from '@hwfKentico/resolvers/about-us.resolver';
 
 
 @NgModule({
@@ -9,6 +10,9 @@ import { AboutUsComponent } from './about-us.component';
     {
       path: '',
       component: AboutUsComponent,
+      resolve: {
+        content: AboutUsResolver
+      }
     },
   ])],
   exports: [RouterModule],

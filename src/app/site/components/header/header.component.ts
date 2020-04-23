@@ -31,20 +31,20 @@ export class HeaderComponent implements OnInit, OnDestroy {
           case '/site/(pages:home)':
             this.currentActiveNav = 'home';
             break;
-          case '/site/(pages:community-connections)':
-            this.currentActiveNav = 'community-connections';
+          case '/site/(pages:about_us)':
+            this.currentActiveNav = 'about_us';
             break;
-          case '/site/(pages:facilitation-resources)':
-            this.currentActiveNav = 'facilitation-resources';
+          case '/site/(pages:community_connections)':
+            this.currentActiveNav = 'community_connections';
+            break;
+          case '/site/(pages:facilitation_resources)':
+            this.currentActiveNav = 'facilitation_resources';
             break;
           case '/site/(pages:gallery)':
             this.currentActiveNav = 'gallery';
             break;
           case '/site/(pages:updates)':
             this.currentActiveNav = 'updates';
-            break;
-          case '/site/(pages:about-us)':
-            this.currentActiveNav = 'about-us';
             break;
           default:
             break;

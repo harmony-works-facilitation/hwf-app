@@ -3,11 +3,15 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { SiteComponent } from '@hwfSite/site.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ContentTypesResolver } from '@hwfKentico/resolvers/content-types.resolver';
 
 const routes: Routes = [
   {
     path: 'site',
     component: SiteComponent,
+    resolve: {
+      pageMetadata: ContentTypesResolver,
+    },
     children: [
       {
         path: '',
@@ -25,17 +29,17 @@ const routes: Routes = [
         outlet: 'pages',
       },
       {
-        path: 'about-us',
+        path: 'about_us',
         loadChildren: () => import('@hwfSitePages/about-us/about-us.module').then(m => m.AboutUsModule),
         outlet: 'pages',
       },
       {
-        path: 'community-connections',
+        path: 'community_connections',
         loadChildren: () => import('@hwfSitePages/community-connections/community-connections.module').then(m => m.CommunityConnectionsModule),
         outlet: 'pages',
       },
       {
-        path: 'facilitation-resources',
+        path: 'facilitation_resources',
         loadChildren: () => import('@hwfSitePages/facilitation-resources/facilitation-resources.module').then(m => m.FacilitationResourcesModule),
         outlet: 'pages',
       },
@@ -57,19 +61,19 @@ const routes: Routes = [
     redirectTo: '/site/(pages:gallery)',
   },
   {
-    path: 'site/about-us',
+    path: 'site/about_us',
     pathMatch: 'full',
-    redirectTo: '/site/(pages:about-us)',
+    redirectTo: '/site/(pages:about_us)',
   },
   {
-    path: 'site/community-connections',
+    path: 'site/community_connections',
     pathMatch: 'full',
-    redirectTo: '/site/(pages:community-connections)',
+    redirectTo: '/site/(pages:community_connections)',
   },
   {
-    path: 'site/facilitation-resources',
+    path: 'site/facilitation_resources',
     pathMatch: 'full',
-    redirectTo: '/site/(pages:facilitation-resources)',
+    redirectTo: '/site/(pages:facilitation_resources)',
   },
   {
     path: 'site/updates',

@@ -14,7 +14,7 @@ Content is manageed by [Kentico Kontent](https://app.kontent.ai/projects).
 
 Install the model generator globally
 
-``bash
+```bash
 npm i @kentico/kontent-model-generator -g
 ```
 

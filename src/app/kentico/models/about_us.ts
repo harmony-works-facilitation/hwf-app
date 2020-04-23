@@ -6,36 +6,45 @@ import { ContentItem, Elements } from '@kentico/kontent-delivery';
  * Tip: You can replace 'ContentItem' with another generated class to fully leverage strong typing.
  */
 export class AboutUs extends ContentItem {
-    public contactEmail3: Elements.TextElement;
-    public contactEmail1: Elements.TextElement;
-    public mobileNumber2: Elements.NumberElement;
     public facebookUrl: Elements.TextElement;
-    public mobileNumber3: Elements.NumberElement;
+    public bannerText: Elements.TextElement;
+    public contactNumber2: Elements.TextElement;
+    public contactNumber1: Elements.NumberElement;
+    public banner: Elements.AssetsElement;
+    public contactEmail1: Elements.TextElement;
+    public pageName: Elements.TextElement;
+    public contactEmail3: Elements.TextElement;
     public contactEmail2: Elements.TextElement;
-    public mobileNumber1: Elements.NumberElement;
+    public whatWeDo: Elements.RichTextElement;
     constructor() {
         super({
             propertyResolver: ((elementName: string) => {
-                if (elementName === 'contact_email_3') {
-                    return 'contactEmail3';
+                if (elementName === 'facebook_url') {
+                    return 'facebookUrl';
+                }
+                if (elementName === 'banner_text') {
+                    return 'bannerText';
+                }
+                if (elementName === 'contact_number_2') {
+                    return 'contactNumber2';
+                }
+                if (elementName === 'contact_number_1') {
+                    return 'contactNumber1';
                 }
                 if (elementName === 'contact_email_1') {
                     return 'contactEmail1';
                 }
-                if (elementName === 'mobile_number_2') {
-                    return 'mobileNumber2';
+                if (elementName === 'page_name') {
+                    return 'pageName';
                 }
-                if (elementName === 'facebook_url') {
-                    return 'facebookUrl';
-                }
-                if (elementName === 'mobile_number_3') {
-                    return 'mobileNumber3';
+                if (elementName === 'contact_email_3') {
+                    return 'contactEmail3';
                 }
                 if (elementName === 'contact_email_2') {
                     return 'contactEmail2';
                 }
-                if (elementName === 'mobile_number_1') {
-                    return 'mobileNumber1';
+                if (elementName === 'what_we_do') {
+                    return 'whatWeDo';
                 }
                 return elementName;
             })

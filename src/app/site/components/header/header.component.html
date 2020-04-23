@@ -16,27 +16,27 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item" [ngClass]="{'active': currentActiveNav === 'home' }">
-          <a class="nav-link" (click)="navigate($event, 'home')">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#" (click)="navigate($event, 'home')">Home <span *ngIf="currentActiveNav ==='home'" class="sr-only">(current)</span></a>
         </li>
 
-        <li class="nav-item" [ngClass]="{'active': currentActiveNav === 'about-us' }">
-          <a class="nav-link" (click)="navigate($event, 'about-us')">About</a>
+        <li class="nav-item" [ngClass]="{'active': currentActiveNav === 'about_us' }">
+          <a class="nav-link" href="#" (click)="navigate($event, 'about_us')">About <span *ngIf="currentActiveNav ==='about_us'" class="sr-only">(current)</span></a>
         </li>
 
-        <li class="nav-item" [ngClass]="{'active': currentActiveNav === 'facilitation-resources' }">
-          <a class="nav-link" (click)="navigate($event, 'facilitation-resources')">Resources</a>
+        <li class="nav-item" [ngClass]="{'active': currentActiveNav === 'facilitation_resources' }">
+          <a class="nav-link" href="#" (click)="navigate($event, 'facilitation_resources')">Resources <span *ngIf="currentActiveNav ==='facilitation_resources'" class="sr-only">(current)</span></a>
         </li>
 
-        <li class="nav-item" [ngClass]="{'active': currentActiveNav === 'community-connections' }">
-          <a class="nav-link" (click)="navigate($event, 'community-connections')">Connections</a>
+        <li class="nav-item" [ngClass]="{'active': currentActiveNav === 'community_connections' }">
+          <a class="nav-link" href="#" (click)="navigate($event, 'community_connections')">Connections <span *ngIf="currentActiveNav ==='community_connections'" class="sr-only">(current)</span></a>
         </li>
 
         <li class="nav-item" [ngClass]="{'active': currentActiveNav === 'gallery' }">
-          <a class="nav-link" (click)="navigate($event, 'gallery')">Gallery</a>
+          <a class="nav-link" href="#" (click)="navigate($event, 'gallery')">Gallery <span *ngIf="currentActiveNav ==='gallery'" class="sr-only">(current)</span></a>
         </li>
 
         <li class="nav-item" [ngClass]="{'active': currentActiveNav === 'updates' }">
-          <a class="nav-link" (click)="navigate($event, 'updates')">Updates</a>
+          <a class="nav-link" href="#" (click)="navigate($event, 'updates')">Updates <span *ngIf="currentActiveNav ==='updates'" class="sr-only">(current)</span></a>
         </li>
 
         <!-- <li class="nav-item dropdown">
