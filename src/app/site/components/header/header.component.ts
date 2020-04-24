@@ -14,14 +14,12 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   public currentActiveNav: string = '';
 
+  public isCollapsed: boolean = true;
+
   constructor(
     private router: Router,
     private route: ActivatedRoute,
   ) {
-
-    // console.log('route', this.route);
-    // console.log('router', this.router);
-
     this.routerSubscription = this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe((event: RouterEvent) => {
@@ -54,7 +52,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-
   }
 
   ngOnDestroy(): void {
@@ -64,5 +61,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
   public navigate(e: Event, page: string): void {
     e.preventDefault();
     this.router.navigateByUrl(`/site/(pages:${page})`);
+    this.isCollapsed = !this.isCollapsed;
   }
 }

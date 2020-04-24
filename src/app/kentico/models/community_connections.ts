@@ -7,13 +7,16 @@ import { ContentItem, Elements } from '@kentico/kontent-delivery';
  */
 export class CommunityConnections extends ContentItem {
     public bannerSlogan: Elements.TextElement;
-    public banner: Elements.AssetsElement;
+    public bannerImage: Elements.AssetsElement;
     public pageName: Elements.TextElement;
     constructor() {
         super({
             propertyResolver: ((elementName: string) => {
                 if (elementName === 'banner_slogan') {
                     return 'bannerSlogan';
+                }
+                if (elementName === 'banner_image') {
+                    return 'bannerImage';
                 }
                 if (elementName === 'page_name') {
                     return 'pageName';

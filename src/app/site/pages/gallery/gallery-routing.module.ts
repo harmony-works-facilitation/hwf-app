@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { GalleryComponent } from './gallery.component';
+import { GalleryResolver } from '@hwfKentico/resolvers/gallery.resolver';
 
 @NgModule({
   imports: [
@@ -9,6 +10,9 @@ import { GalleryComponent } from './gallery.component';
       {
         path: '',
         component: GalleryComponent,
+        resolve: {
+          content: GalleryResolver,
+        }
       },
     ]),
   ],

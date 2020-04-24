@@ -7,10 +7,10 @@ import { ContentItem, Elements } from '@kentico/kontent-delivery';
  */
 export class AboutUs extends ContentItem {
     public facebookUrl: Elements.TextElement;
-    public bannerText: Elements.TextElement;
+    public bannerSlogan: Elements.TextElement;
     public contactNumber2: Elements.TextElement;
     public contactNumber1: Elements.NumberElement;
-    public banner: Elements.AssetsElement;
+    public bannerImage: Elements.AssetsElement;
     public contactEmail1: Elements.TextElement;
     public pageName: Elements.TextElement;
     public contactEmail3: Elements.TextElement;
@@ -22,14 +22,17 @@ export class AboutUs extends ContentItem {
                 if (elementName === 'facebook_url') {
                     return 'facebookUrl';
                 }
-                if (elementName === 'banner_text') {
-                    return 'bannerText';
+                if (elementName === 'banner_slogan') {
+                    return 'bannerSlogan';
                 }
                 if (elementName === 'contact_number_2') {
                     return 'contactNumber2';
                 }
                 if (elementName === 'contact_number_1') {
                     return 'contactNumber1';
+                }
+                if (elementName === 'banner_image') {
+                    return 'bannerImage';
                 }
                 if (elementName === 'contact_email_1') {
                     return 'contactEmail1';

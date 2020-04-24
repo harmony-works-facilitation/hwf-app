@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
     this.bannerSlogan = this.content?.bannerSlogan.value;
 
-    this.bannerImageUrl = this.content?.banner.value[0]?.url ?? this.lorumPicsumService.getRandomImage();
+    this.bannerImageUrl = this.content?.bannerImage.value[0]?.url ?? this.lorumPicsumService.getRandomImage();
   }
 
   ngOnDestroy(): void {

@@ -9,7 +9,7 @@ export class Gallery extends ContentItem {
     public bannerSlogan: Elements.TextElement;
     public untitledAsset: Elements.AssetsElement;
     public pageName: Elements.TextElement;
-    public banner: Elements.AssetsElement;
+    public bannerImage: Elements.AssetsElement;
     constructor() {
         super({
             propertyResolver: ((elementName: string) => {
@@ -21,6 +21,9 @@ export class Gallery extends ContentItem {
                 }
                 if (elementName === 'page_name') {
                     return 'pageName';
+                }
+                if (elementName === 'banner_image') {
+                    return 'bannerImage';
                 }
                 return elementName;
             })
