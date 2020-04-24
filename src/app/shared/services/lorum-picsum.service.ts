@@ -18,6 +18,7 @@ export class LorumPicsumService {
     const queryParameters = qs.stringify({
       ...(blur && { blur }),
       ...(grayscale && { blur }),
+      cacheBust: new Date().getTime(),
     }, {
         addQueryPrefix: true
     });
