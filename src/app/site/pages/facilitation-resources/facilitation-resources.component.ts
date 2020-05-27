@@ -18,6 +18,8 @@ export class FacilitationResourcesComponent implements OnInit {
 
   public bannerImageUrl?: string;
 
+  public pageContent?: string;
+
   constructor(
     private route: ActivatedRoute,
     private lorumPicsumService: LorumPicsumService,

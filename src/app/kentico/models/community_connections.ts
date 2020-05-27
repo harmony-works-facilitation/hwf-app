@@ -6,6 +6,7 @@ import { ContentItem, Elements } from '@kentico/kontent-delivery';
  * Tip: You can replace 'ContentItem' with another generated class to fully leverage strong typing.
  */
 export class CommunityConnections extends ContentItem {
+    public content: Elements.RichTextElement;
     public bannerSlogan: Elements.TextElement;
     public bannerImage: Elements.AssetsElement;
     public pageName: Elements.TextElement;

@@ -7,6 +7,7 @@ import { ContentItem, Elements } from '@kentico/kontent-delivery';
  */
 export class FacilitationResources extends ContentItem {
     public bannerImage: Elements.AssetsElement;
+    public content: Elements.RichTextElement;
     public pageName: Elements.TextElement;
     public bannerSlogan: Elements.TextElement;
     constructor() {

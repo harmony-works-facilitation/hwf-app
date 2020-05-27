@@ -18,6 +18,8 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   public bannerImageUrl?: string;
 
+  public pageContent?: string;
+
   constructor(
     private route: ActivatedRoute,
     private lorumPicsumService: LorumPicsumService,
@@ -33,6 +35,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.bannerSlogan = this.content?.bannerSlogan.value;
 
     this.bannerImageUrl = this.content?.bannerImage.value[0]?.url ?? this.lorumPicsumService.getRandomImage();
+  
+    this.pageContent = this.content?.content?.value;
   }
 
   ngOnDestroy(): void {

@@ -1,11 +1,67 @@
 <div class="jumbotron jumbotron-fluid d-none d-xs-none d-sm-none d-md-block d-lg-block">
-
   <div class="jumbotron-background">
-    <img [src]="bannerImageUrl"/>
+    <img [src]="bannerImageUrl" />
   </div>
 
   <div class="container text-white">
     <h1 class="display-4">{{ pageName }}</h1>
     <p *ngIf="bannerSlogan" class="lead">{{ bannerSlogan }}</p>
   </div>
+</div>
+
+<div *ngIf="listOfServices" class="container">
+  <div class="row">
+    <div class="col-12">
+      <h4>{{ listOfServices?.rawData.name }}</h4>
+    </div>
+    <div class="col-12" [innerHTML]="listOfServices.value"></div>
+  </div>
+</div>
+
+<!-- SPOTLIGHT -->
+<div *ngIf="spotlightContentStructure" class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="card p-3 mb-2">
+        <blockquote class="blockquote mb-0 card-body">
+          <p class="text-center">{{ spotlightContentStructure?.aboutUsSpotlightSlogan.value }}</p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text" [innerHTML]="spotlightContentStructure?.aboutUsSpotlightHamidahMarican.value"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text" [innerHTML]="spotlightContentStructure?.aboutUsSpotlightPatriciaNunis.value"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="profileAccordion" class="container">
+  <ng-container *ngFor="let profile of profileAccordion | keyvalue; let i = index">
+    <ngb-accordion *ngIf="accordionHasContent(profile.value)" #acc="ngbAccordion" activeIds="{{profile.key}}-{{i}}">
+      <ngb-panel title="{{getAccordionElement(profile.value, 'title')?.value}}">
+        <ng-template ngbPanelContent>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" [src]="getAccordionElement(profile.value, 'headshot')?.value[0]?.url" alt="{{getAccordionElement(profile.value, 'title')?.value}}">
+            <div class="card-body">
+              <p class="card-text" [innerHTML]="getAccordionElement(profile.value, 'qualifications')?.value"></p>
+            </div>
+          </div>
+          <p [innerHTML]="getAccordionElement(profile.value, 'description')?.value"></p>
+        </ng-template>
+      </ngb-panel>
+    </ngb-accordion>
+  </ng-container>
 </div>

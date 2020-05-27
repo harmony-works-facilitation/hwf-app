@@ -8,6 +8,7 @@ import { ContentItem, Elements } from '@kentico/kontent-delivery';
 export class Updates extends ContentItem {
     public bannerImage: Elements.AssetsElement;
     public pageName: Elements.TextElement;
+    public content: Elements.RichTextElement;
     public bannerSlogan: Elements.TextElement;
     constructor() {
         super({

@@ -9,3 +9,9 @@
     <p *ngIf="bannerSlogan" class="lead">{{ bannerSlogan }}</p>
   </div>
 </div>
+
+<div *ngIf="pageContent" class="container">
+  <div class="row">
+    <div class="col" [innerHTML]="pageContent"></div>
+  </div>
+</div>

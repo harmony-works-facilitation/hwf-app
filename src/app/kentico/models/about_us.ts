@@ -6,48 +6,232 @@ import { ContentItem, Elements } from '@kentico/kontent-delivery';
  * Tip: You can replace 'ContentItem' with another generated class to fully leverage strong typing.
  */
 export class AboutUs extends ContentItem {
-    public facebookUrl: Elements.TextElement;
+    public selectedClientListClientImage9: Elements.AssetsElement;
+    public areasOfExpertiseAreaOfExpertise4: Elements.TextElement;
+    public governmentPublicInstitutionsItem8: Elements.TextElement;
+    public governmentPublicInstitutionsItem4: Elements.TextElement;
+    public universitiesItem1: Elements.TextElement;
+    public areasOfExpertiseAreaOfExpertise3: Elements.TextElement;
+    public governmentPublicInstitutionsItem3: Elements.TextElement;
+    public areasOfExpertiseAreaOfExpertise1: Elements.TextElement;
     public bannerSlogan: Elements.TextElement;
-    public contactNumber2: Elements.TextElement;
-    public contactNumber1: Elements.NumberElement;
+    public universitiesItem6: Elements.TextElement;
+    public selectedClientListClientImage7: Elements.AssetsElement;
+    public aboutUsSpotlightEnquiries: Elements.RichTextElement;
+    public governmentPublicInstitutionsItem6: Elements.TextElement;
+    public patriciaNunisProfileAccordionTitle: Elements.TextElement;
+    public patriciaNunisProfileAccordionHeadshot: Elements.AssetsElement;
+    public areasOfExpertiseAreaOfExpertise8: Elements.TextElement;
+    public hamidahMaricanProfileAccordionHeadshot: Elements.AssetsElement;
+    public hamidahMaricanProfileAccordionCertificationsQualifications: Elements.RichTextElement;
+    public patriciaNunisProfileAccordionCertificationsQualifications: Elements.RichTextElement;
+    public universitiesItem5: Elements.TextElement;
+    public associatesAccordionTitle: Elements.TextElement;
+    public governmentPublicInstitutionsItem5: Elements.TextElement;
     public bannerImage: Elements.AssetsElement;
-    public contactEmail1: Elements.TextElement;
+    public selectedClientListClientImage1: Elements.AssetsElement;
+    public associatesAccordionDescription: Elements.RichTextElement;
+    public selectedClientListClientImage6: Elements.AssetsElement;
     public pageName: Elements.TextElement;
-    public contactEmail3: Elements.TextElement;
-    public contactEmail2: Elements.TextElement;
-    public whatWeDo: Elements.RichTextElement;
+    public governmentPublicInstitutionsItem9: Elements.TextElement;
+    public selectedClientListClientImage11: Elements.AssetsElement;
+    public universitiesItem3: Elements.TextElement;
+    public hamidahMaricanProfileAccordionDescription: Elements.RichTextElement;
+    public selectedClientListClientImage5: Elements.AssetsElement;
+    public areasOfExpertiseAreaOfExpertise6: Elements.TextElement;
+    public universitiesItem2: Elements.TextElement;
+    public selectedClientListClientImage10: Elements.AssetsElement;
+    public aboutUsSpotlightHamidahMarican: Elements.RichTextElement;
+    public hamidahMaricanProfileAccordionTitle: Elements.TextElement;
+    public areasOfExpertiseAreaOfExpertise5: Elements.TextElement;
+    public selectedClientListClientImage3: Elements.AssetsElement;
+    public areasOfExpertiseAreaOfExpertise9: Elements.TextElement;
+    public selectedClientListClientImage13: Elements.AssetsElement;
+    public areasOfExpertiseAreaOfExpertise2: Elements.TextElement;
+    public patriciaNunisProfileAccordionDescription: Elements.RichTextElement;
+    public governmentPublicInstitutionsItem7: Elements.TextElement;
+    public aboutUsSpotlightPatriciaNunis: Elements.RichTextElement;
+    public areasOfExpertiseAreaOfExpertise7: Elements.TextElement;
+    public aboutUsSpotlightSlogan: Elements.TextElement;
+    public areasOfExpertiseAreaOfExpertise10: Elements.TextElement;
+    public governmentPublicInstitutionsItem2: Elements.TextElement;
+    public selectedClientListClientImage8: Elements.AssetsElement;
+    public selectedClientListClientImage2: Elements.AssetsElement;
+    public selectedClientListClientImage4: Elements.AssetsElement;
+    public universitiesItem4: Elements.TextElement;
+    public selectedClientListClientImage12: Elements.AssetsElement;
+    public governmentPublicInstitutionsItem1: Elements.TextElement;
+    public listOfServices: Elements.RichTextElement;
     constructor() {
         super({
             propertyResolver: ((elementName: string) => {
-                if (elementName === 'facebook_url') {
-                    return 'facebookUrl';
+                if (elementName === 'selected_client_list__client_image_9') {
+                    return 'selectedClientListClientImage9';
+                }
+                if (elementName === 'areas_of_expertise__area_of_expertise_4') {
+                    return 'areasOfExpertiseAreaOfExpertise4';
+                }
+                if (elementName === 'government___public_institutions__item_8') {
+                    return 'governmentPublicInstitutionsItem8';
+                }
+                if (elementName === 'government___public_institutions__item_4') {
+                    return 'governmentPublicInstitutionsItem4';
+                }
+                if (elementName === 'universities__item_1') {
+                    return 'universitiesItem1';
+                }
+                if (elementName === 'areas_of_expertise__area_of_expertise_3') {
+                    return 'areasOfExpertiseAreaOfExpertise3';
+                }
+                if (elementName === 'government___public_institutions__item_3') {
+                    return 'governmentPublicInstitutionsItem3';
+                }
+                if (elementName === 'areas_of_expertise__area_of_expertise_1') {
+                    return 'areasOfExpertiseAreaOfExpertise1';
                 }
                 if (elementName === 'banner_slogan') {
                     return 'bannerSlogan';
                 }
-                if (elementName === 'contact_number_2') {
-                    return 'contactNumber2';
+                if (elementName === 'universities__item_6') {
+                    return 'universitiesItem6';
                 }
-                if (elementName === 'contact_number_1') {
-                    return 'contactNumber1';
+                if (elementName === 'selected_client_list__client_image_7') {
+                    return 'selectedClientListClientImage7';
+                }
+                if (elementName === 'about_us_spotlight__enquiries') {
+                    return 'aboutUsSpotlightEnquiries';
+                }
+                if (elementName === 'government___public_institutions__item_6') {
+                    return 'governmentPublicInstitutionsItem6';
+                }
+                if (elementName === 'patricia_nunis_profile_accordion__title') {
+                    return 'patriciaNunisProfileAccordionTitle';
+                }
+                if (elementName === 'patricia_nunis_profile_accordion__headshot') {
+                    return 'patriciaNunisProfileAccordionHeadshot';
+                }
+                if (elementName === 'areas_of_expertise__area_of_expertise_8') {
+                    return 'areasOfExpertiseAreaOfExpertise8';
+                }
+                if (elementName === 'hamidah_marican_profile_accordion__headshot') {
+                    return 'hamidahMaricanProfileAccordionHeadshot';
+                }
+                if (elementName === 'hamidah_marican_profile_accordion__certifications___qualifications') {
+                    return 'hamidahMaricanProfileAccordionCertificationsQualifications';
+                }
+                if (elementName === 'patricia_nunis_profile_accordion__certifications___qualifications') {
+                    return 'patriciaNunisProfileAccordionCertificationsQualifications';
+                }
+                if (elementName === 'universities__item_5') {
+                    return 'universitiesItem5';
+                }
+                if (elementName === 'associates_accordion__title') {
+                    return 'associatesAccordionTitle';
+                }
+                if (elementName === 'government___public_institutions__item_5') {
+                    return 'governmentPublicInstitutionsItem5';
                 }
                 if (elementName === 'banner_image') {
                     return 'bannerImage';
                 }
-                if (elementName === 'contact_email_1') {
-                    return 'contactEmail1';
+                if (elementName === 'selected_client_list__client_image_1') {
+                    return 'selectedClientListClientImage1';
+                }
+                if (elementName === 'associates_accordion__description') {
+                    return 'associatesAccordionDescription';
+                }
+                if (elementName === 'selected_client_list__client_image_6') {
+                    return 'selectedClientListClientImage6';
                 }
                 if (elementName === 'page_name') {
                     return 'pageName';
                 }
-                if (elementName === 'contact_email_3') {
-                    return 'contactEmail3';
+                if (elementName === 'government___public_institutions__item_9') {
+                    return 'governmentPublicInstitutionsItem9';
                 }
-                if (elementName === 'contact_email_2') {
-                    return 'contactEmail2';
+                if (elementName === 'selected_client_list__client_image_11') {
+                    return 'selectedClientListClientImage11';
                 }
-                if (elementName === 'what_we_do') {
-                    return 'whatWeDo';
+                if (elementName === 'universities__item_3') {
+                    return 'universitiesItem3';
+                }
+                if (elementName === 'hamidah_marican_profile_accordion__description') {
+                    return 'hamidahMaricanProfileAccordionDescription';
+                }
+                if (elementName === 'selected_client_list__client_image_5') {
+                    return 'selectedClientListClientImage5';
+                }
+                if (elementName === 'areas_of_expertise__area_of_expertise_6') {
+                    return 'areasOfExpertiseAreaOfExpertise6';
+                }
+                if (elementName === 'universities__item_2') {
+                    return 'universitiesItem2';
+                }
+                if (elementName === 'selected_client_list__client_image_10') {
+                    return 'selectedClientListClientImage10';
+                }
+                if (elementName === 'about_us_spotlight__hamidah_marican') {
+                    return 'aboutUsSpotlightHamidahMarican';
+                }
+                if (elementName === 'hamidah_marican_profile_accordion__title') {
+                    return 'hamidahMaricanProfileAccordionTitle';
+                }
+                if (elementName === 'areas_of_expertise__area_of_expertise_5') {
+                    return 'areasOfExpertiseAreaOfExpertise5';
+                }
+                if (elementName === 'selected_client_list__client_image_3') {
+                    return 'selectedClientListClientImage3';
+                }
+                if (elementName === 'areas_of_expertise__area_of_expertise_9') {
+                    return 'areasOfExpertiseAreaOfExpertise9';
+                }
+                if (elementName === 'selected_client_list__client_image_13') {
+                    return 'selectedClientListClientImage13';
+                }
+                if (elementName === 'areas_of_expertise__area_of_expertise_2') {
+                    return 'areasOfExpertiseAreaOfExpertise2';
+                }
+                if (elementName === 'patricia_nunis_profile_accordion__description') {
+                    return 'patriciaNunisProfileAccordionDescription';
+                }
+                if (elementName === 'government___public_institutions__item_7') {
+                    return 'governmentPublicInstitutionsItem7';
+                }
+                if (elementName === 'about_us_spotlight__patricia_nunis') {
+                    return 'aboutUsSpotlightPatriciaNunis';
+                }
+                if (elementName === 'areas_of_expertise__area_of_expertise_7') {
+                    return 'areasOfExpertiseAreaOfExpertise7';
+                }
+                if (elementName === 'about_us_spotlight__slogan') {
+                    return 'aboutUsSpotlightSlogan';
+                }
+                if (elementName === 'areas_of_expertise__area_of_expertise_10') {
+                    return 'areasOfExpertiseAreaOfExpertise10';
+                }
+                if (elementName === 'government___public_institutions__item_2') {
+                    return 'governmentPublicInstitutionsItem2';
+                }
+                if (elementName === 'selected_client_list__client_image_8') {
+                    return 'selectedClientListClientImage8';
+                }
+                if (elementName === 'selected_client_list__client_image_2') {
+                    return 'selectedClientListClientImage2';
+                }
+                if (elementName === 'selected_client_list__client_image_4') {
+                    return 'selectedClientListClientImage4';
+                }
+                if (elementName === 'universities__item_4') {
+                    return 'universitiesItem4';
+                }
+                if (elementName === 'selected_client_list__client_image_12') {
+                    return 'selectedClientListClientImage12';
+                }
+                if (elementName === 'government___public_institutions__item_1') {
+                    return 'governmentPublicInstitutionsItem1';
+                }
+                if (elementName === 'list_of_services') {
+                    return 'listOfServices';
                 }
                 return elementName;
             })

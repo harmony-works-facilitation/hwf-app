@@ -17,6 +17,8 @@ export class CommunityConnectionsComponent implements OnInit {
   public bannerSlogan?: string;
 
   public bannerImageUrl?: string;
+  
+  public pageContent?: string;
 
   constructor(
     private route: ActivatedRoute,

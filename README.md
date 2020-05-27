@@ -21,7 +21,7 @@ npm i @kentico/kontent-model-generator -g
 Then run:
 
 ```bash
-kontent-generate --projectId=xxx --moduleResolution=ES2015 --codeType=TypeScript --addTimestamp --strictPropertyInitalization
+kontent-generate --projectId=b42cf0e6-3ab5-00ce-ec22-fb20f1264dc6 --moduleResolution=ES2015 --codeType=TypeScript --addTimestamp --strictPropertyInitalization
 ```
 
 > `xxx` refers to the project ID and can be found in Kentico Kontent project dashboard.
